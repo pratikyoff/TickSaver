@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "start": "deno run main.ts"
+  },
+  "imports": {
+    "upstox-js-sdk": "npm:upstox-js-sdk@^2.11.0"
+  },
+  "nodeModulesDir": "auto"
+}
