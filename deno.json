@@ -1,9 +1,17 @@
 {
-  "tasks": {
-    "start": "deno run main.ts"
-  },
-  "imports": {
-    "upstox-js-sdk": "npm:upstox-js-sdk@^2.11.0"
-  },
-  "nodeModulesDir": "auto"
+    "imports": {
+        "@oak/oak": "jsr:@oak/oak@^17.1.0",
+        "dotenv": "jsr:@std/dotenv/load",
+        "postgresjs": "https://deno.land/x/postgresjs@v3.4.4/mod.js",
+        "upstox-js-sdk": "npm:upstox-js-sdk@^2.11.0"
+    },
+    "tasks": {
+        "start": "deno run --allow-env --allow-read --allow-net main.ts"
+    },
+    "fmt": {
+        "semiColons": false,
+        "singleQuote": true,
+        "indentWidth": 4,
+        "lineWidth": 100
+    }
 }
